@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack {
+            VStack(spacing: 0) {
                 TabScreen(router: router)
                 TabBar(router: router, size: geometry.size)
             }

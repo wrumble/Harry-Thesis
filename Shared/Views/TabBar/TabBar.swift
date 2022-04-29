@@ -26,13 +26,13 @@ struct TabBar: View {
             TabBarIcon(router: router, size: iconSize, screen: .search)
             Spacer()
         }
-        .background(Color.tabBarBackground.shadow(radius: 6))
         .frame(width: size.width, height: size.height/8)
+        .background(Color.tabBarBackground.shadow(radius: 6))
     }
 }
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar(router: Router(), size: CGSize(width: 74, height: 74))
+        TabBar(router: Router(), size: CGSize(width: 300, height: 600))
     }
 }

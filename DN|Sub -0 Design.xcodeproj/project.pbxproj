@@ -28,6 +28,7 @@
 		687AB73E281C62D10003D373 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687AB73D281C62D10003D373 /* ColorExtensions.swift */; };
 		687AB741281C63760003D373 /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687AB740281C63760003D373 /* TabScreen.swift */; };
 		687AB743281C67DB0003D373 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687AB742281C67DB0003D373 /* FontExtensions.swift */; };
+		68AAD2F9281C9B460012F6D5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AAD2F8281C9B460012F6D5 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		687AB73D281C62D10003D373 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		687AB740281C63760003D373 /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
 		687AB742281C67DB0003D373 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		68AAD2F8281C9B460012F6D5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,9 +208,8 @@
 		687AB737281C5B000003D373 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				687AB72A281C3EFF0003D373 /* TabBarIcon.swift */,
-				687AB73B281C60160003D373 /* TabBar.swift */,
-				687AB740281C63760003D373 /* TabScreen.swift */,
+				68AAD2F7281C9B260012F6D5 /* TabBar */,
+				68AAD2F8281C9B460012F6D5 /* HomeScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +221,16 @@
 				687AB742281C67DB0003D373 /* FontExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68AAD2F7281C9B260012F6D5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				687AB72A281C3EFF0003D373 /* TabBarIcon.swift */,
+				687AB73B281C60160003D373 /* TabBar.swift */,
+				687AB740281C63760003D373 /* TabScreen.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				687AB72B281C3EFF0003D373 /* TabBarIcon.swift in Sources */,
 				687AB716281C39C90003D373 /* ContentView.swift in Sources */,
 				687AB73C281C60160003D373 /* TabBar.swift in Sources */,
+				68AAD2F9281C9B460012F6D5 /* HomeScreen.swift in Sources */,
 				687AB714281C39C90003D373 /* DN__0_DesignApp.swift in Sources */,
 				687AB72D281C40810003D373 /* Router.swift in Sources */,
 				687AB73E281C62D10003D373 /* ColorExtensions.swift in Sources */,

@@ -27,22 +27,8 @@ struct TabScreen: View {
     }
 }
 
-struct HomeScreen: View {
-    
-    @StateObject var router: Router
-    
-    var body: some View {
-        VStack {
-            Spacer()
-            Text("Home")
-            Spacer()
-        }
-        .frame(
-            maxWidth: .infinity,
-            maxHeight: .infinity
-        )
-        .background(
-            LinearGradient(colors: [Color.leftFadeBackground, Color.rightFadeBackground], startPoint: .leading, endPoint: .trailing)
-        )
+struct TabScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        TabScreen(router: Router())
     }
 }

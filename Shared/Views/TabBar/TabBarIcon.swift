@@ -30,3 +30,9 @@ struct TabBarIcon: View {
          }
      }
  }
+
+struct TabBarIcon_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBarIcon(router: Router(), size: 74, screen: .home)
+    }
+}
