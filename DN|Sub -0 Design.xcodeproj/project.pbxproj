@@ -34,8 +34,6 @@
 		68AAD2FE281CA1CB0012F6D5 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AAD2FC281CA1C80012F6D5 /* Chapter.swift */; };
 		68AAD300281CAC280012F6D5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687AB730281C43600003D373 /* Colors.xcassets */; };
 		68AAD302281CAD840012F6D5 /* ChaptersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AAD301281CAD840012F6D5 /* ChaptersScreen.swift */; };
-		68AAD30F281CB1B50012F6D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68AAD30E281CB1B50012F6D5 /* GoogleService-Info.plist */; };
-		68AAD310281CB1B50012F6D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68AAD30E281CB1B50012F6D5 /* GoogleService-Info.plist */; };
 		68AAD313281CBBD10012F6D5 /* ChapterScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AAD312281CBBD10012F6D5 /* ChapterScreenViewModel.swift */; };
 		68AAD314281CBBD10012F6D5 /* ChapterScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AAD312281CBBD10012F6D5 /* ChapterScreenViewModel.swift */; };
 		68AAD316281CBC060012F6D5 /* ChapterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AAD315281CBC060012F6D5 /* ChapterRepository.swift */; };
@@ -61,6 +59,8 @@
 		68AAD33E281CC27A0012F6D5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 68AAD33D281CC27A0012F6D5 /* FirebaseStorage */; };
 		68AAD340281CC27A0012F6D5 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 68AAD33F281CC27A0012F6D5 /* FirebaseStorageCombine-Community */; };
 		68AAD342281CC27A0012F6D5 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 68AAD341281CC27A0012F6D5 /* FirebaseStorageSwift-Beta */; };
+		68AAD347281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68AAD346281CDFAB0012F6D5 /* GoogleService-Info.plist */; };
+		68AAD348281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68AAD346281CDFAB0012F6D5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,9 +108,9 @@
 		68AAD2FA281C9FBC0012F6D5 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 		68AAD2FC281CA1C80012F6D5 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		68AAD301281CAD840012F6D5 /* ChaptersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersScreen.swift; sourceTree = "<group>"; };
-		68AAD30E281CB1B50012F6D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		68AAD312281CBBD10012F6D5 /* ChapterScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterScreenViewModel.swift; sourceTree = "<group>"; };
 		68AAD315281CBC060012F6D5 /* ChapterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterRepository.swift; sourceTree = "<group>"; };
+		68AAD346281CDFAB0012F6D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +242,7 @@
 		687AB729281C3ED30003D373 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				68AAD30E281CB1B50012F6D5 /* GoogleService-Info.plist */,
+				68AAD346281CDFAB0012F6D5 /* GoogleService-Info.plist */,
 				687AB732281C5A7B0003D373 /* Fonts */,
 				687AB6EE281C39C90003D373 /* Images.xcassets */,
 				687AB730281C43600003D373 /* Colors.xcassets */,
@@ -466,7 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				687AB718281C39C90003D373 /* Images.xcassets in Resources */,
-				68AAD30F281CB1B50012F6D5 /* GoogleService-Info.plist in Resources */,
+				68AAD347281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */,
 				687AB735281C5AB20003D373 /* JosefinSans-Regular.ttf in Resources */,
 				687AB731281C43600003D373 /* Colors.xcassets in Resources */,
 			);
@@ -477,7 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68AAD300281CAC280012F6D5 /* Colors.xcassets in Resources */,
-				68AAD310281CB1B50012F6D5 /* GoogleService-Info.plist in Resources */,
+				68AAD348281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */,
 				687AB719281C39C90003D373 /* Images.xcassets in Resources */,
 				687AB738281C5B320003D373 /* JosefinSans-Regular.ttf in Resources */,
 			);
@@ -702,6 +702,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumblewayne.DN--0-Design";
 				PRODUCT_NAME = "DN|Sub -0 Design";
 				SDKROOT = iphoneos;
@@ -733,6 +734,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumblewayne.DN--0-Design";
 				PRODUCT_NAME = "DN|Sub -0 Design";
 				SDKROOT = iphoneos;
@@ -764,6 +766,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumblewayne.DN--0-Design";
 				PRODUCT_NAME = "DN|Sub -0 Design";
 				SDKROOT = macosx;
@@ -793,6 +796,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumblewayne.DN--0-Design";
 				PRODUCT_NAME = "DN|Sub -0 Design";
 				SDKROOT = macosx;

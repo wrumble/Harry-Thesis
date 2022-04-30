@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct HomeScreen: View {
     
@@ -14,7 +15,7 @@ struct HomeScreen: View {
     var body: some View {
         VStack {
             Spacer()
-            ChapterView(chapter: .mock(), router: router)
+            Text("HomeScreen")
             Spacer()
         }
         .frame(
@@ -24,6 +25,11 @@ struct HomeScreen: View {
         .background(
             LinearGradient(colors: [Color.leftFadeBackground, Color.rightFadeBackground], startPoint: .leading, endPoint: .trailing)
         )
+        .onAppear() {
+            Analytics.logEvent(AnalyticsEventScreenView,
+                               parameters: [AnalyticsParameterScreenName: "\(HomeScreen.self)",
+                                           AnalyticsParameterScreenClass: "\(HomeScreen.self)"])
+        }
     }
 }
 

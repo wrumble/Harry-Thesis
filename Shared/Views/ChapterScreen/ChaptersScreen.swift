@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-
-
+import Firebase
 
 struct ChaptersScreen: View {
     
@@ -28,6 +27,11 @@ struct ChaptersScreen: View {
         .background(
             LinearGradient(colors: [Color.leftFadeBackground, Color.rightFadeBackground], startPoint: .leading, endPoint: .trailing)
         )
+        .onAppear() {
+            Analytics.logEvent(AnalyticsEventScreenView,
+                               parameters: [AnalyticsParameterScreenName: "\(ChaptersScreen.self)",
+                                           AnalyticsParameterScreenClass: "\(ChaptersScreen.self)"])
+        }
     }
 }
 

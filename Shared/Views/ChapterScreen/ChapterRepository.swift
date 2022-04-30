@@ -18,6 +18,7 @@ class ChapterRepository: ObservableObject {
     @Published var chapters: [Chapter] = []
     
     init() {
+        store.settings.isPersistenceEnabled = true
         getChapters()
     }
     
