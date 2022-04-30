@@ -16,9 +16,7 @@ struct TabScreen: View {
         case .home:
             HomeScreen(router: router)
         case .chapters:
-            Spacer()
-            Text("Chapters")
-            Spacer()
+            ChaptersScreen(router: router)
         case .bibliography:
             Text("Bibliography")
         case .search:

@@ -11,4 +11,5 @@ import SwiftUI
 
 extension Font {
     static let header = Font.custom("JosefinSans-Regular", size: 24)
+    static let subHeader = Font.custom("JosefinSans-Regular", size: 20)
 }

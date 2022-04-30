@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ChapterBackgroundView.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

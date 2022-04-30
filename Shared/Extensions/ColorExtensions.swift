@@ -8,7 +8,12 @@
 import SwiftUI
 
 extension Color {
+    static let fontGreen = Color("FontGreen")
     static let tabBarBackground = Color("TabBarBackground")
     static let leftFadeBackground = Color("LeftFadeBackground")
     static let rightFadeBackground = Color("RightFadeBackground")
+    static let chapterViewLeftFadeBackground = Color("ChapterViewLeftFadeBackground")
+    static let chapterViewRightFadeBackground = Color("ChapterViewRightFadeBackground")
+    static let chapterViewTopDropShadow = Color("ChapterViewTopDropShadow")
+    static let chapterViewBottomDropShadow = Color("ChapterViewBottomDropShadow")
 }

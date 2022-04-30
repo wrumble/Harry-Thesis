@@ -1,21 +1,25 @@
 //
-//  HomeScreen.swift
+//  ChapterScreen.swift
 //  DN|Sub -0 Design (iOS)
 //
-//  Created by Wayne Rumble on 29/04/2022.
+//  Created by Wayne Rumble on 30/04/2022.
 //
 
 import SwiftUI
 
-struct HomeScreen: View {
+
+
+struct ChaptersScreen: View {
+    
+    @ObservedObject var viewModel = ChaptersScreenViewModel()
     
     @StateObject var router: Router
     
     var body: some View {
-        VStack {
-            Spacer()
-            ChapterView(chapter: .mock(), router: router)
-            Spacer()
+        VStack(spacing: 32) {
+            ForEach(viewModel.chapters, id: \.number) { chapter in
+                ChapterView(chapter: chapter, router: router)
+            }
         }
         .frame(
             maxWidth: .infinity,
@@ -27,8 +31,8 @@ struct HomeScreen: View {
     }
 }
 
-struct HomeScreen_Previews: PreviewProvider {
+struct ChapterScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen(router: Router())
+        ChaptersScreen(router: Router())
     }
 }
