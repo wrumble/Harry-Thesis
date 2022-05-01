@@ -11,10 +11,12 @@ struct TabScreen: View {
     
     @StateObject var router: Router
     
+    var statusBarHeight: CGFloat
+    
     var body: some View {
         switch router.currentScreen {
         case .home:
-            HomeScreen(router: router)
+            HomeScreen(router: router, statusBarHeight: statusBarHeight)
         case .chapters:
             ChaptersScreen(router: router)
         case .bibliography:
@@ -27,6 +29,6 @@ struct TabScreen: View {
 
 struct TabScreen_Previews: PreviewProvider {
     static var previews: some View {
-        TabScreen(router: Router())
+        TabScreen(router: Router(), statusBarHeight: 50)
     }
 }

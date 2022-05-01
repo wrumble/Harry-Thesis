@@ -13,12 +13,13 @@ struct TitleItem: Hashable, Identifiable, Codable, Equatable {
     }
     
     let text: String
-    let icon: String
+    let imageName: String
     let position: Int
+    let placeHolderName: String
 }
 
 extension TitleItem {
-    static func mock(text: String = "text", icon: String = "harry", position: Int = 0) -> Self {
-        .init(text: text, icon: icon, position: position)
+    static func mock(text: String = "text", icon: String = "harry", position: Int = 0, placeHolderName: String = "photoCopyIcon") -> Self {
+        .init(text: text, imageName: icon, position: position, placeHolderName: placeHolderName)
     }
 }

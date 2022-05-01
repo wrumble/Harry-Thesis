@@ -19,23 +19,22 @@ struct ChapterView: View {
                 Image("chapterIconView")
                 Image(chapter.icon)
             }
-            Spacer()
+            .padding(19)
             Text(chapter.name.uppercased())
-                .font(.subHeader)
+                .font(.subHeader1)
                 .foregroundColor(Color.fontGreen)
             Spacer()
         }
-        .padding(19)
         .frame(
-            maxWidth: UIScreen.main.bounds.width - 64,
+            maxWidth: UIScreen.main.bounds.width * 0.84,
             maxHeight: 160
         )
         .background(
             LinearGradient(colors: [Color.chapterViewLeftFadeBackground, Color.chapterViewRightFadeBackground], startPoint: .leading, endPoint: .trailing)
         )
         .clipShape(RoundedRectangle(cornerRadius: 16))
-        .shadow(color: Color.chapterViewBottomDropShadow, radius: 6, x: 4, y: 3)
-        .shadow(color: Color.chapterViewTopDropShadow, radius: 10, x: -7, y: -7)
+        .shadow(color: Color.chapterViewBottomDropShadow, radius: 19, x: 4, y: 3)
+        .shadow(color: Color.chapterViewTopDropShadow, radius: 16, x: -7, y: -7)
     }
 }
 

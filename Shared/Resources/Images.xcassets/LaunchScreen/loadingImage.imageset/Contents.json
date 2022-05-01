@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "LaunchScreenBackround.png",
+      "filename" : "loadingImage.png",
       "idiom" : "universal"
     }
   ],

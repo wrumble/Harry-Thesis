@@ -11,6 +11,7 @@ class HomeScreenViewModel: ObservableObject {
     
     private let homeRepository = HomeRepository()
     @Published var titleItems: [TitleItem] = []
+    @Published var credentials: Credentials? = nil
     
     private var cancellables: Set<AnyCancellable> = []
     
@@ -18,5 +19,10 @@ class HomeScreenViewModel: ObservableObject {
         homeRepository.$titleItems
             .assign(to: \.titleItems, on: self)
             .store(in: &cancellables)
+        
+        homeRepository.$credentials
+            .assign(to: \.credentials, on: self)
+            .store(in: &cancellables)
     }
+    
 }

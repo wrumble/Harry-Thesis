@@ -14,10 +14,13 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
-                TabScreen(router: router)
+                TabScreen(router: router, statusBarHeight: geometry.safeAreaInsets.top)
                 TabBar(router: router, size: geometry.size)
             }
-            .edgesIgnoringSafeArea(.bottom)
+            .background(
+                LinearGradient(colors: [Color.leftFadeBackground, Color.rightFadeBackground], startPoint: .leading, endPoint: .trailing)
+            )
+            .edgesIgnoringSafeArea([.top, .bottom])
         }
     }
 }

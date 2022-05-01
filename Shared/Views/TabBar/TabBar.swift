@@ -14,8 +14,9 @@ struct TabBar: View {
     let size: CGSize
     
     var body: some View {
+        let tabBarHeight = size.height/8
         HStack {
-            let iconSize = size.width/6
+            let iconSize = tabBarHeight * 0.67
             Spacer()
             TabBarIcon(router: router, size: iconSize, screen: .home)
             Spacer()
@@ -26,8 +27,8 @@ struct TabBar: View {
             TabBarIcon(router: router, size: iconSize, screen: .search)
             Spacer()
         }
-        .frame(width: size.width, height: size.height/8)
-        .background(Color.tabBarBackground.shadow(radius: 6))
+        .frame(width: size.width, height: tabBarHeight)
+        .background(Color.tabBarBackground.shadow(color: Color.chapterViewBottomDropShadow.opacity(0.43), radius: 14, x: 0, y: -6))
     }
 }
 
