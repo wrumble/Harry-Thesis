@@ -10,8 +10,10 @@ import Combine
 class HomeScreenViewModel: ObservableObject {
     
     private let homeRepository = HomeRepository()
+    
     @Published var titleItems: [TitleItem] = []
     @Published var credentials: Credentials? = nil
+    @Published var formatItems: [FormatItem] = []
     
     private var cancellables: Set<AnyCancellable> = []
     
@@ -22,6 +24,10 @@ class HomeScreenViewModel: ObservableObject {
         
         homeRepository.$credentials
             .assign(to: \.credentials, on: self)
+            .store(in: &cancellables)
+        
+        homeRepository.$formatItems
+            .assign(to: \.formatItems, on: self)
             .store(in: &cancellables)
     }
     

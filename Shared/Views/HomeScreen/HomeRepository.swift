@@ -16,6 +16,7 @@ class HomeRepository: ObservableObject {
     
     @Published var titleItems: [TitleItem] = []
     @Published var credentials: Credentials? = Credentials.mock()
+    @Published var formatItems: [FormatItem] = []
     
     init() {
         let settings = FirestoreSettings()
@@ -24,6 +25,7 @@ class HomeRepository: ObservableObject {
 
         getTitleItems()
         getCredentials()
+        getFormats()
     }
     
     func getTitleItems() {
@@ -58,6 +60,24 @@ class HomeRepository: ObservableObject {
                 if snapshot.metadata.isFromCache && snapshot.documents.count == 0 {
                     self.credentials = .mock()
                 }
+            }
+    }
+    
+    func getFormats() {
+        store.collection("formats")
+            .addSnapshotListener(includeMetadataChanges: true) { querySnapshot, error in
+                guard let snapshot = querySnapshot else {
+                    self.formatItems = [.mock(), .mock(), .mock()]
+                    return
+                }
+                                
+                self.formatItems = snapshot.documents.compactMap { try? $0.data(as: FormatItem.self) }
+                
+                if snapshot.metadata.isFromCache && snapshot.documents.count == 0 {
+                    self.formatItems = [.mock(), .mock(), .mock()]
+                }
+                
+                self.formatItems.sort(by: { $0.position < $1.position })
             }
     }
 }

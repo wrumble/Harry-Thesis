@@ -17,7 +17,7 @@ struct ChapterView: View {
         HStack {
             ZStack {
                 Image("chapterIconView")
-                Image(chapter.icon)
+                FirebaseImage(imageName: chapter.imageName, placeHolderName: chapter.placeHolderName)
             }
             .padding(19)
             Text(chapter.name.uppercased())

@@ -80,6 +80,10 @@
 		68CE890C281E24C0001B84FA /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE890B281E24C0001B84FA /* FirebaseImage.swift */; };
 		68CE890D281E24C0001B84FA /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE890B281E24C0001B84FA /* FirebaseImage.swift */; };
 		68CE8913281E3445001B84FA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 68CE8912281E3445001B84FA /* SDWebImageSwiftUI */; };
+		68CE891528206A4D001B84FA /* formatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891428206A4D001B84FA /* formatItem.swift */; };
+		68CE891628206A4D001B84FA /* formatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891428206A4D001B84FA /* formatItem.swift */; };
+		68CE891828206AAA001B84FA /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891728206AAA001B84FA /* FormatsView.swift */; };
+		68CE891928206AAA001B84FA /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891728206AAA001B84FA /* FormatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +143,8 @@
 		68CE8901281DF931001B84FA /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		68CE8904281DF9CC001B84FA /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
 		68CE890B281E24C0001B84FA /* FirebaseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImage.swift; sourceTree = "<group>"; };
+		68CE891428206A4D001B84FA /* formatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatItem.swift; sourceTree = "<group>"; };
+		68CE891728206AAA001B84FA /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +338,7 @@
 				68AAD350281CE6BC0012F6D5 /* Home.swift */,
 				68AAD353281CE8580012F6D5 /* TitleItem.swift */,
 				68CE88FE281DF34D001B84FA /* Credentials.swift */,
+				68CE891428206A4D001B84FA /* formatItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -356,6 +363,7 @@
 				68CE88FB281DEF63001B84FA /* TitleItemsView.swift */,
 				68CE8901281DF931001B84FA /* SpacerView.swift */,
 				68CE8904281DF9CC001B84FA /* CredentialsView.swift */,
+				68CE891728206AAA001B84FA /* FormatsView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -561,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68AAD313281CBBD10012F6D5 /* ChapterScreenViewModel.swift in Sources */,
+				68CE891528206A4D001B84FA /* formatItem.swift in Sources */,
 				68AAD316281CBC060012F6D5 /* ChapterRepository.swift in Sources */,
 				68CE8902281DF931001B84FA /* SpacerView.swift in Sources */,
 				687AB72F281C40AC0003D373 /* Screen.swift in Sources */,
@@ -570,6 +579,7 @@
 				68AAD351281CE6BC0012F6D5 /* Home.swift in Sources */,
 				687AB743281C67DB0003D373 /* FontExtensions.swift in Sources */,
 				68AAD354281CE8580012F6D5 /* TitleItem.swift in Sources */,
+				68CE891828206AAA001B84FA /* FormatsView.swift in Sources */,
 				68AAD2FD281CA1C80012F6D5 /* Chapter.swift in Sources */,
 				687AB72B281C3EFF0003D373 /* TabBarIcon.swift in Sources */,
 				687AB716281C39C90003D373 /* ContentView.swift in Sources */,
@@ -594,6 +604,8 @@
 				68AAD34F281CE66B0012F6D5 /* HomeRepository.swift in Sources */,
 				68CE8903281DF931001B84FA /* SpacerView.swift in Sources */,
 				68CE890D281E24C0001B84FA /* FirebaseImage.swift in Sources */,
+				68CE891628206A4D001B84FA /* formatItem.swift in Sources */,
+				68CE891928206AAA001B84FA /* FormatsView.swift in Sources */,
 				687AB717281C39C90003D373 /* ContentView.swift in Sources */,
 				68AAD317281CBC060012F6D5 /* ChapterRepository.swift in Sources */,
 				68CE88FD281DEF63001B84FA /* TitleItemsView.swift in Sources */,

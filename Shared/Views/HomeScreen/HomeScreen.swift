@@ -16,15 +16,43 @@ struct HomeScreen: View {
     
     var statusBarHeight: CGFloat
     
+    private var hasTitleItems: Bool {
+        viewModel.titleItems.count > 0
+    }
+    
+    private var hasCredentials: Bool {
+        viewModel.credentials != nil
+    }
+    
+    private var hasFormatItems: Bool {
+        viewModel.formatItems.count > 0
+    }
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 50) {
-                TitleItemsView(titleItems: viewModel.titleItems)
-                if viewModel.titleItems.count > 0 && viewModel.credentials != nil {
+                if hasTitleItems {
+                    TitleItemsView(titleItems: viewModel.titleItems)
+                }
+                
+                if hasTitleItems && hasCredentials {
                     SpacerView()
                 }
+                
                 if let credentials = viewModel.credentials {
                     CredentialsView(credentials: credentials)
+                }
+                
+                if hasCredentials && hasFormatItems {
+                    SpacerView()
+                }
+                
+                if hasFormatItems {
+                    FormatItemsView(formatItems: viewModel.formatItems)
+                }
+                
+                if hasFormatItems && has {
+                    SpacerView()
                 }
             }
             .padding(.top, statusBarHeight + 20)

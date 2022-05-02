@@ -18,7 +18,7 @@ struct TabScreen: View {
         case .home:
             HomeScreen(router: router, statusBarHeight: statusBarHeight)
         case .chapters:
-            ChaptersScreen(router: router)
+            ChaptersScreen(router: router,  statusBarHeight: statusBarHeight)
         case .bibliography:
             Text("Bibliography")
         case .search:

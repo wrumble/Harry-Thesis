@@ -14,11 +14,17 @@ struct ChaptersScreen: View {
     
     @StateObject var router: Router
     
+    var statusBarHeight: CGFloat
+    
     var body: some View {
-        VStack(spacing: 32) {
-            ForEach(viewModel.chapters, id: \.number) { chapter in
-                ChapterView(chapter: chapter, router: router)
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 32) {
+                ForEach(viewModel.chapters, id: \.number) { chapter in
+                    ChapterView(chapter: chapter, router: router)
+                }
             }
+            .padding(.top, statusBarHeight + 20)
+            .frame(maxWidth: .infinity)
         }
         .frame(
             maxWidth: .infinity,
@@ -37,6 +43,6 @@ struct ChaptersScreen: View {
 
 struct ChapterScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ChaptersScreen(router: Router())
+        ChaptersScreen(router: Router(), statusBarHeight: 20)
     }
 }

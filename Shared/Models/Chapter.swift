@@ -14,11 +14,12 @@ struct Chapter: Hashable, Identifiable, Codable, Equatable {
     
     let name: String
     let number: Int
-    let icon: String
+    let imageName: String
+    let placeHolderName: String
 }
 
 extension Chapter {
-    static func mock(name: String = "Chapter 1", number: Int = 0, icon: String = "photoCopyIcon") -> Self {
-        .init(name: name, number: number, icon: icon)
+    static func mock(name: String = "Chapter 1", number: Int = 0, imageName: String = "photoCopy", placeHolderName: String = "lightBulb") -> Self {
+        .init(name: name, number: number, imageName: imageName, placeHolderName: placeHolderName)
     }
 }
