@@ -14,6 +14,7 @@ class HomeScreenViewModel: ObservableObject {
     @Published var titleItems: [TitleItem] = []
     @Published var credentials: Credentials? = nil
     @Published var formatItems: [FormatItem] = []
+    @Published var prologueItems: [PrologueItem] = []
     
     private var cancellables: Set<AnyCancellable> = []
     
@@ -28,6 +29,10 @@ class HomeScreenViewModel: ObservableObject {
         
         homeRepository.$formatItems
             .assign(to: \.formatItems, on: self)
+            .store(in: &cancellables)
+        
+        homeRepository.$prologueItems
+            .assign(to: \.prologueItems, on: self)
             .store(in: &cancellables)
     }
     

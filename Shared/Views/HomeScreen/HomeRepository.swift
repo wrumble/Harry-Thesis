@@ -17,6 +17,7 @@ class HomeRepository: ObservableObject {
     @Published var titleItems: [TitleItem] = []
     @Published var credentials: Credentials? = Credentials.mock()
     @Published var formatItems: [FormatItem] = []
+    @Published var prologueItems: [PrologueItem] = []
     
     init() {
         let settings = FirestoreSettings()
@@ -26,6 +27,7 @@ class HomeRepository: ObservableObject {
         getTitleItems()
         getCredentials()
         getFormats()
+        getPrologueItems()
     }
     
     func getTitleItems() {
@@ -78,6 +80,24 @@ class HomeRepository: ObservableObject {
                 }
                 
                 self.formatItems.sort(by: { $0.position < $1.position })
+            }
+    }
+    
+    func getPrologueItems() {
+        store.collection("prologueItems")
+            .addSnapshotListener(includeMetadataChanges: true) { querySnapshot, error in
+                guard let snapshot = querySnapshot else {
+                    self.prologueItems = [.mock(), .mock(), .mock()]
+                    return
+                }
+                                
+                self.prologueItems = snapshot.documents.compactMap { try? $0.data(as: PrologueItem.self) }
+                
+                if snapshot.metadata.isFromCache && snapshot.documents.count == 0 {
+                    self.prologueItems = [.mock(), .mock(), .mock()]
+                }
+                
+                self.prologueItems.sort(by: { $0.position < $1.position })
             }
     }
 }

@@ -84,6 +84,10 @@
 		68CE891628206A4D001B84FA /* formatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891428206A4D001B84FA /* formatItem.swift */; };
 		68CE891828206AAA001B84FA /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891728206AAA001B84FA /* FormatsView.swift */; };
 		68CE891928206AAA001B84FA /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891728206AAA001B84FA /* FormatsView.swift */; };
+		68CE891B282074F5001B84FA /* PrologueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891A282074F5001B84FA /* PrologueItem.swift */; };
+		68CE891C282074F5001B84FA /* PrologueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891A282074F5001B84FA /* PrologueItem.swift */; };
+		68CE891E28207B2A001B84FA /* ProloguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891D28207B2A001B84FA /* ProloguesView.swift */; };
+		68CE891F28207B2A001B84FA /* ProloguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891D28207B2A001B84FA /* ProloguesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +149,8 @@
 		68CE890B281E24C0001B84FA /* FirebaseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImage.swift; sourceTree = "<group>"; };
 		68CE891428206A4D001B84FA /* formatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatItem.swift; sourceTree = "<group>"; };
 		68CE891728206AAA001B84FA /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
+		68CE891A282074F5001B84FA /* PrologueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrologueItem.swift; sourceTree = "<group>"; };
+		68CE891D28207B2A001B84FA /* ProloguesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProloguesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +345,7 @@
 				68AAD353281CE8580012F6D5 /* TitleItem.swift */,
 				68CE88FE281DF34D001B84FA /* Credentials.swift */,
 				68CE891428206A4D001B84FA /* formatItem.swift */,
+				68CE891A282074F5001B84FA /* PrologueItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -364,6 +371,7 @@
 				68CE8901281DF931001B84FA /* SpacerView.swift */,
 				68CE8904281DF9CC001B84FA /* CredentialsView.swift */,
 				68CE891728206AAA001B84FA /* FormatsView.swift */,
+				68CE891D28207B2A001B84FA /* ProloguesView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -576,10 +584,12 @@
 				68CE88FF281DF34D001B84FA /* Credentials.swift in Sources */,
 				68CE890C281E24C0001B84FA /* FirebaseImage.swift in Sources */,
 				687AB741281C63760003D373 /* TabScreen.swift in Sources */,
+				68CE891B282074F5001B84FA /* PrologueItem.swift in Sources */,
 				68AAD351281CE6BC0012F6D5 /* Home.swift in Sources */,
 				687AB743281C67DB0003D373 /* FontExtensions.swift in Sources */,
 				68AAD354281CE8580012F6D5 /* TitleItem.swift in Sources */,
 				68CE891828206AAA001B84FA /* FormatsView.swift in Sources */,
+				68CE891E28207B2A001B84FA /* ProloguesView.swift in Sources */,
 				68AAD2FD281CA1C80012F6D5 /* Chapter.swift in Sources */,
 				687AB72B281C3EFF0003D373 /* TabBarIcon.swift in Sources */,
 				687AB716281C39C90003D373 /* ContentView.swift in Sources */,
@@ -615,9 +625,11 @@
 				6878468C281C7E5200229FF9 /* Router.swift in Sources */,
 				687AB715281C39C90003D373 /* DN__0_DesignApp.swift in Sources */,
 				68AAD355281CE8580012F6D5 /* TitleItem.swift in Sources */,
+				68CE891F28207B2A001B84FA /* ProloguesView.swift in Sources */,
 				68CE8906281DF9CC001B84FA /* CredentialsView.swift in Sources */,
 				68AAD314281CBBD10012F6D5 /* ChapterScreenViewModel.swift in Sources */,
 				68AAD2FE281CA1CB0012F6D5 /* Chapter.swift in Sources */,
+				68CE891C282074F5001B84FA /* PrologueItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

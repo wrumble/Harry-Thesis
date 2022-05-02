@@ -28,6 +28,10 @@ struct HomeScreen: View {
         viewModel.formatItems.count > 0
     }
     
+    private var hasPrologueItmes: Bool {
+        viewModel.prologueItems.count > 0
+    }
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 50) {
@@ -51,8 +55,13 @@ struct HomeScreen: View {
                     FormatItemsView(formatItems: viewModel.formatItems)
                 }
                 
-                if hasFormatItems && has {
+                if hasFormatItems && hasPrologueItmes {
                     SpacerView()
+                }
+                
+                if hasPrologueItmes {
+                    ProloguesView(prologueItems: viewModel.prologueItems)
+                        .padding(.top, -80)
                 }
             }
             .padding(.top, statusBarHeight + 20)
