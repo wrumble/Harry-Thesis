@@ -90,7 +90,7 @@ struct ProloguesView: View {
     }
 }
 
-struct FProloguesView_Previews: PreviewProvider {
+struct ProloguesView_Previews: PreviewProvider {
     static var previews: some View {
         ProloguesView(prologueItems: [.mock(), .mock(), .mock()])
     }

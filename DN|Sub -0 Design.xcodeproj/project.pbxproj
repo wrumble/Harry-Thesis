@@ -80,14 +80,16 @@
 		68CE890C281E24C0001B84FA /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE890B281E24C0001B84FA /* FirebaseImage.swift */; };
 		68CE890D281E24C0001B84FA /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE890B281E24C0001B84FA /* FirebaseImage.swift */; };
 		68CE8913281E3445001B84FA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 68CE8912281E3445001B84FA /* SDWebImageSwiftUI */; };
-		68CE891528206A4D001B84FA /* formatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891428206A4D001B84FA /* formatItem.swift */; };
-		68CE891628206A4D001B84FA /* formatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891428206A4D001B84FA /* formatItem.swift */; };
+		68CE891528206A4D001B84FA /* FormatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891428206A4D001B84FA /* FormatItem.swift */; };
+		68CE891628206A4D001B84FA /* FormatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891428206A4D001B84FA /* FormatItem.swift */; };
 		68CE891828206AAA001B84FA /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891728206AAA001B84FA /* FormatsView.swift */; };
 		68CE891928206AAA001B84FA /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891728206AAA001B84FA /* FormatsView.swift */; };
 		68CE891B282074F5001B84FA /* PrologueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891A282074F5001B84FA /* PrologueItem.swift */; };
 		68CE891C282074F5001B84FA /* PrologueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891A282074F5001B84FA /* PrologueItem.swift */; };
 		68CE891E28207B2A001B84FA /* ProloguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891D28207B2A001B84FA /* ProloguesView.swift */; };
 		68CE891F28207B2A001B84FA /* ProloguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891D28207B2A001B84FA /* ProloguesView.swift */; };
+		68D14D6E2822EF42008A15B7 /* FontFile.css in Resources */ = {isa = PBXBuildFile; fileRef = 68D14D6D2822EF42008A15B7 /* FontFile.css */; };
+		68D14D6F2822EF42008A15B7 /* FontFile.css in Resources */ = {isa = PBXBuildFile; fileRef = 68D14D6D2822EF42008A15B7 /* FontFile.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,10 +149,11 @@
 		68CE8901281DF931001B84FA /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		68CE8904281DF9CC001B84FA /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
 		68CE890B281E24C0001B84FA /* FirebaseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImage.swift; sourceTree = "<group>"; };
-		68CE891428206A4D001B84FA /* formatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatItem.swift; sourceTree = "<group>"; };
+		68CE891428206A4D001B84FA /* FormatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatItem.swift; sourceTree = "<group>"; };
 		68CE891728206AAA001B84FA /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
 		68CE891A282074F5001B84FA /* PrologueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrologueItem.swift; sourceTree = "<group>"; };
 		68CE891D28207B2A001B84FA /* ProloguesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProloguesView.swift; sourceTree = "<group>"; };
+		68D14D6D2822EF42008A15B7 /* FontFile.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = FontFile.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				687AB734281C5AB20003D373 /* JosefinSans-Regular.ttf */,
+				68D14D6D2822EF42008A15B7 /* FontFile.css */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -344,7 +348,7 @@
 				68AAD350281CE6BC0012F6D5 /* Home.swift */,
 				68AAD353281CE8580012F6D5 /* TitleItem.swift */,
 				68CE88FE281DF34D001B84FA /* Credentials.swift */,
-				68CE891428206A4D001B84FA /* formatItem.swift */,
+				68CE891428206A4D001B84FA /* FormatItem.swift */,
 				68CE891A282074F5001B84FA /* PrologueItem.swift */,
 			);
 			path = Models;
@@ -538,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				687AB718281C39C90003D373 /* Images.xcassets in Resources */,
+				68D14D6E2822EF42008A15B7 /* FontFile.css in Resources */,
 				68AAD347281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */,
 				687AB735281C5AB20003D373 /* JosefinSans-Regular.ttf in Resources */,
 				687AB731281C43600003D373 /* Colors.xcassets in Resources */,
@@ -549,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68AAD300281CAC280012F6D5 /* Colors.xcassets in Resources */,
+				68D14D6F2822EF42008A15B7 /* FontFile.css in Resources */,
 				68AAD348281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */,
 				687AB719281C39C90003D373 /* Images.xcassets in Resources */,
 				687AB738281C5B320003D373 /* JosefinSans-Regular.ttf in Resources */,
@@ -577,7 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68AAD313281CBBD10012F6D5 /* ChapterScreenViewModel.swift in Sources */,
-				68CE891528206A4D001B84FA /* formatItem.swift in Sources */,
+				68CE891528206A4D001B84FA /* FormatItem.swift in Sources */,
 				68AAD316281CBC060012F6D5 /* ChapterRepository.swift in Sources */,
 				68CE8902281DF931001B84FA /* SpacerView.swift in Sources */,
 				687AB72F281C40AC0003D373 /* Screen.swift in Sources */,
@@ -614,7 +620,7 @@
 				68AAD34F281CE66B0012F6D5 /* HomeRepository.swift in Sources */,
 				68CE8903281DF931001B84FA /* SpacerView.swift in Sources */,
 				68CE890D281E24C0001B84FA /* FirebaseImage.swift in Sources */,
-				68CE891628206A4D001B84FA /* formatItem.swift in Sources */,
+				68CE891628206A4D001B84FA /* FormatItem.swift in Sources */,
 				68CE891928206AAA001B84FA /* FormatsView.swift in Sources */,
 				687AB717281C39C90003D373 /* ContentView.swift in Sources */,
 				68AAD317281CBC060012F6D5 /* ChapterRepository.swift in Sources */,
@@ -793,7 +799,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -824,7 +830,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

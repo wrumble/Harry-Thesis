@@ -16,30 +16,14 @@ struct HomeScreen: View {
     
     var statusBarHeight: CGFloat
     
-    private var hasTitleItems: Bool {
-        viewModel.titleItems.count > 0
-    }
-    
-    private var hasCredentials: Bool {
-        viewModel.credentials != nil
-    }
-    
-    private var hasFormatItems: Bool {
-        viewModel.formatItems.count > 0
-    }
-    
-    private var hasPrologueItmes: Bool {
-        viewModel.prologueItems.count > 0
-    }
-    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 50) {
-                if hasTitleItems {
+                if viewModel.hasTitleItems {
                     TitleItemsView(titleItems: viewModel.titleItems)
                 }
                 
-                if hasTitleItems && hasCredentials {
+                if viewModel.hasTitleItems && viewModel.hasCredentials {
                     SpacerView()
                 }
                 
@@ -47,19 +31,19 @@ struct HomeScreen: View {
                     CredentialsView(credentials: credentials)
                 }
                 
-                if hasCredentials && hasFormatItems {
+                if viewModel.hasCredentials && viewModel.hasFormatItems {
                     SpacerView()
                 }
                 
-                if hasFormatItems {
+                if viewModel.hasFormatItems {
                     FormatItemsView(formatItems: viewModel.formatItems)
                 }
                 
-                if hasFormatItems && hasPrologueItmes {
+                if viewModel.hasFormatItems && viewModel.hasPrologueItems {
                     SpacerView()
                 }
                 
-                if hasPrologueItmes {
+                if viewModel.hasPrologueItems {
                     ProloguesView(prologueItems: viewModel.prologueItems)
                         .padding(.top, -80)
                 }

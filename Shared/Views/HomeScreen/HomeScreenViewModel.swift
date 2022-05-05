@@ -18,6 +18,22 @@ class HomeScreenViewModel: ObservableObject {
     
     private var cancellables: Set<AnyCancellable> = []
     
+    var hasTitleItems: Bool {
+        titleItems.count > 0
+    }
+    
+    var hasCredentials: Bool {
+        credentials != nil
+    }
+    
+    var hasFormatItems: Bool {
+        formatItems.count > 0
+    }
+    
+    var hasPrologueItems: Bool {
+        prologueItems.count > 0
+    }
+    
     init() {
         homeRepository.$titleItems
             .assign(to: \.titleItems, on: self)
