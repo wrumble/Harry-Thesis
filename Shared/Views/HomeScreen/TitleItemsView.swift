@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TitleItemsView: View {
     
-    var titleItems: [TitleItem]
+    var titleItems: [TitleItem] = TitleItem.defaultData
     
     var body: some View {
         VStack(spacing: 16) {
@@ -38,6 +38,6 @@ struct TitleItemsView: View {
 
 struct TitleItemsView_Previews: PreviewProvider {
     static var previews: some View {
-        TitleItemsView(titleItems: [.mock(), .mock(), .mock()])
+        TitleItemsView(titleItems: TitleItem.defaultData)
     }
 }

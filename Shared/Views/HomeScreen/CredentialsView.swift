@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CredentialsView: View {
     
-    var credentials: Credentials
+    var credentials: Credentials = .defaultData
     
     var body: some View {
         VStack {
@@ -80,6 +80,6 @@ struct CredentialsView: View {
 
 struct CredentialsView_Previews: PreviewProvider {
     static var previews: some View {
-        CredentialsView(credentials: .mock())
+        CredentialsView(credentials: .defaultData)
     }
 }

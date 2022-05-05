@@ -11,9 +11,7 @@ import Firebase
 struct HomeScreen: View {
     
     @ObservedObject var viewModel = HomeScreenViewModel()
-    
-    @StateObject var router: Router
-    
+        
     var statusBarHeight: CGFloat
     
     var body: some View {
@@ -65,8 +63,11 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        let homeScreen = HomeScreen(router: Router(), statusBarHeight: 20)
-        homeScreen.viewModel.titleItems = [.mock(), .mock()]
+        let homeScreen = HomeScreen(statusBarHeight: 20)
+        homeScreen.viewModel.titleItems = TitleItem.defaultData
+        homeScreen.viewModel.credentials = Credentials.defaultData
+        homeScreen.viewModel.formatItems = FormatItem.defaultData
+        homeScreen.viewModel.prologueItems = PrologueItem.defaultData
         return homeScreen
     }
 }

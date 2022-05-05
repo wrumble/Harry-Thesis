@@ -15,7 +15,7 @@ class ChapterRepository: ObservableObject {
     private let path: String = "chapters"
     private let store = Firestore.firestore()
     
-    @Published var chapters: [Chapter] = []
+    @Published var chapters: [Chapter] = Chapter.defaultData
     
     init() {
         store.settings.isPersistenceEnabled = true
@@ -26,7 +26,7 @@ class ChapterRepository: ObservableObject {
         store.collection(path)
             .addSnapshotListener { querySnapshot, error in
                 guard let documents = querySnapshot?.documents else {
-                    print("No Chapters")
+                    self.chapters = Chapter.defaultData
                     return
                 }
                 

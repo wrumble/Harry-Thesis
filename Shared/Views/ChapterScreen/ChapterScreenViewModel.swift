@@ -10,7 +10,7 @@ import Combine
 class ChaptersScreenViewModel: ObservableObject {
     
     private let chapterRepository = ChapterRepository()
-    @Published var chapters: [Chapter] = []
+    @Published var chapters: [Chapter] = Chapter.defaultData
     
     private var cancellables: Set<AnyCancellable> = []
     

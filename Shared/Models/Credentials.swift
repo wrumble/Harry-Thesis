@@ -50,4 +50,8 @@ extension Credentials {
             studentID: studentID,
             universityName: universityName)
     }
+    
+    static var defaultData: Self {
+        Credentials(authorsName: "Harry James Oliver Parkinson", dissertationType: "Architectural Thesis", prefix: "by", studentID: "0009919971.6", universityName: "University of Greenwich")
+    }
 }

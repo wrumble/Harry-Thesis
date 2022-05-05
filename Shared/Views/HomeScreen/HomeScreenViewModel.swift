@@ -11,10 +11,10 @@ class HomeScreenViewModel: ObservableObject {
     
     private let homeRepository = HomeRepository()
     
-    @Published var titleItems: [TitleItem] = []
-    @Published var credentials: Credentials? = nil
-    @Published var formatItems: [FormatItem] = []
-    @Published var prologueItems: [PrologueItem] = []
+    @Published var titleItems: [TitleItem] = TitleItem.defaultData
+    @Published var credentials: Credentials? = Credentials.defaultData
+    @Published var formatItems: [FormatItem] = FormatItem.defaultData
+    @Published var prologueItems: [PrologueItem] = PrologueItem.defaultData
     
     private var cancellables: Set<AnyCancellable> = []
     

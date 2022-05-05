@@ -17,4 +17,7 @@ extension Color {
     static let chapterViewTopDropShadow = Color("ChapterViewTopDropShadow")
     static let chapterViewBottomDropShadow = Color("ChapterViewBottomDropShadow")
     static let launchScreenBackground = Color("LaunchScreenBackground")
+    static let exampleViewRightFadeBackground = Color("ExampleViewRightFadeBackground")
+    static let exampleViewLeftFadeBackground = Color("ExampleViewLeftFadeBackground")
+    static let exampleViewBottomDropShadow = Color("ExampleViewBottomDropShadow")
 }

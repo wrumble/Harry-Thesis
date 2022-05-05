@@ -14,10 +14,10 @@ class HomeRepository: ObservableObject {
     
     private let store = Firestore.firestore()
     
-    @Published var titleItems: [TitleItem] = []
-    @Published var credentials: Credentials? = Credentials.mock()
-    @Published var formatItems: [FormatItem] = []
-    @Published var prologueItems: [PrologueItem] = []
+    @Published var titleItems: [TitleItem] = TitleItem.defaultData
+    @Published var credentials: Credentials? = Credentials.defaultData
+    @Published var formatItems: [FormatItem] = FormatItem.defaultData
+    @Published var prologueItems: [PrologueItem] = PrologueItem.defaultData
     
     init() {
         let settings = FirestoreSettings()
@@ -34,14 +34,14 @@ class HomeRepository: ObservableObject {
         store.collection("titleItems")
             .addSnapshotListener(includeMetadataChanges: true) { querySnapshot, error in
                 guard let snapshot = querySnapshot else {
-                    self.titleItems = [.mock(), .mock(), .mock()]
+                    self.titleItems = TitleItem.defaultData
                     return
                 }
                                 
                 self.titleItems = snapshot.documents.compactMap { try? $0.data(as: TitleItem.self) }
                 
                 if snapshot.metadata.isFromCache && snapshot.documents.count == 0 {
-                    self.titleItems = [.mock(), .mock(), .mock()]
+                    self.titleItems = TitleItem.defaultData
                 }
             
                 self.titleItems.sort(by: { $0.position < $1.position })
@@ -53,14 +53,14 @@ class HomeRepository: ObservableObject {
             .addSnapshotListener(includeMetadataChanges: true) { querySnapshot, error in
                 guard let snapshot = querySnapshot,
                 let document = snapshot.documents.first else {
-                    self.credentials = .mock()
+                    self.credentials = .defaultData
                     return
                 }
                                 
                 self.credentials = try? document.data(as: Credentials.self)
                 
                 if snapshot.metadata.isFromCache && snapshot.documents.count == 0 {
-                    self.credentials = .mock()
+                    self.credentials = .defaultData
                 }
             }
     }
@@ -69,14 +69,14 @@ class HomeRepository: ObservableObject {
         store.collection("formats")
             .addSnapshotListener(includeMetadataChanges: true) { querySnapshot, error in
                 guard let snapshot = querySnapshot else {
-                    self.formatItems = [.mock(), .mock(), .mock()]
+                    self.formatItems = FormatItem.defaultData
                     return
                 }
                                 
                 self.formatItems = snapshot.documents.compactMap { try? $0.data(as: FormatItem.self) }
                 
                 if snapshot.metadata.isFromCache && snapshot.documents.count == 0 {
-                    self.formatItems = [.mock(), .mock(), .mock()]
+                    self.formatItems = FormatItem.defaultData
                 }
                 
                 self.formatItems.sort(by: { $0.position < $1.position })
@@ -87,14 +87,14 @@ class HomeRepository: ObservableObject {
         store.collection("prologueItems")
             .addSnapshotListener(includeMetadataChanges: true) { querySnapshot, error in
                 guard let snapshot = querySnapshot else {
-                    self.prologueItems = [.mock(), .mock(), .mock()]
+                    self.prologueItems = PrologueItem.defaultData
                     return
                 }
                                 
                 self.prologueItems = snapshot.documents.compactMap { try? $0.data(as: PrologueItem.self) }
                 
                 if snapshot.metadata.isFromCache && snapshot.documents.count == 0 {
-                    self.prologueItems = [.mock(), .mock(), .mock()]
+                    self.prologueItems = PrologueItem.defaultData
                 }
                 
                 self.prologueItems.sort(by: { $0.position < $1.position })

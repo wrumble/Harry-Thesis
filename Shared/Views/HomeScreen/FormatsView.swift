@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FormatItemsView: View {
     
-    var formatItems: [FormatItem]
+    var formatItems: [FormatItem] = FormatItem.defaultData
     
     var body: some View {
         VStack(spacing: 17) {
@@ -29,6 +29,6 @@ struct FormatItemsView: View {
 
 struct FormatItemsView_Previews: PreviewProvider {
     static var previews: some View {
-        FormatItemsView(formatItems: [.mock(), .mock(), .mock()])
+        FormatItemsView(formatItems: FormatItem.defaultData)
     }
 }

@@ -11,16 +11,20 @@ struct TabScreen: View {
     
     @StateObject var router: Router
     
+    @ObservedObject var bibliographyViewModel = BibliographyViewModel()
+    
     var statusBarHeight: CGFloat
     
     var body: some View {
         switch router.currentScreen {
         case .home:
-            HomeScreen(router: router, statusBarHeight: statusBarHeight)
+            HomeScreen(statusBarHeight: statusBarHeight)
         case .chapters:
             ChaptersScreen(router: router,  statusBarHeight: statusBarHeight)
         case .bibliography:
-            Text("Bibliography")
+            if let bibliography = bibliographyViewModel.bibliography {
+                BibliographyScreen(bibliography: bibliography)
+            }
         case .search:
             Text("Search")
         }

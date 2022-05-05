@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProloguesView: View {
     
-    var prologueItems: [PrologueItem]
+    var prologueItems: [PrologueItem] = PrologueItem.defaultData
     
     var body: some View {
         VStack() {
@@ -31,10 +31,17 @@ struct ProloguesView: View {
                     prologueText(text: text)
                 }
                 
-                SpacerView()
-                    .padding(.top, 80)
+                if prologueItem.hasExample {
+                    ExampleView(prologueItem: prologueItem)
+                }
+                
+                if prologueItem.position <= prologueItems.count  {
+                    SpacerView()
+                        .padding(.top, prologueItem.hasExample ? 50 : 80)
+                }
             }
         }
+        .padding(.bottom, 50)
     }
     
     private func prologueIconView(prologueItem: PrologueItem) -> some View {
@@ -80,7 +87,7 @@ struct ProloguesView: View {
     }
     
     private func prologueText(text: String) -> some View {
-        Text(text)
+        Text(text.replacingOccurrences(of: " * ", with: "\n • ").replacingOccurrences(of: "NEWLINE", with: "\n"))
             .font(.subHeader3)
             .lineSpacing(30)
             .fixedSize(horizontal: false, vertical: true)
@@ -92,6 +99,6 @@ struct ProloguesView: View {
 
 struct ProloguesView_Previews: PreviewProvider {
     static var previews: some View {
-        ProloguesView(prologueItems: [.mock(), .mock(), .mock()])
+        ProloguesView(prologueItems: PrologueItem.defaultData)
     }
 }
