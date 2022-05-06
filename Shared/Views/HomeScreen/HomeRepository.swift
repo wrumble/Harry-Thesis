@@ -18,8 +18,9 @@ class HomeRepository: ObservableObject {
     @Published var credentials: Credentials? = Credentials.defaultData
     @Published var formatItems: [FormatItem] = FormatItem.defaultData
     @Published var prologueItems: [PrologueItem] = PrologueItem.defaultData
-    
+            
     init() {
+        
         let settings = FirestoreSettings()
         settings.isPersistenceEnabled = true
         store.settings = settings

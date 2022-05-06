@@ -24,7 +24,7 @@ struct TabBar: View {
             Spacer()
             TabBarIcon(router: router, size: iconSize, screen: .bibliography)
             Spacer()
-            TabBarIcon(router: router, size: iconSize, screen: .search)
+            TabBarIcon(router: router, size: iconSize, screen: .chapterReader)
             Spacer()
         }
         .frame(width: size.width, height: tabBarHeight)

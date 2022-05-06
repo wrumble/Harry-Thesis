@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum Screen {
+enum Screen: Equatable {
     case home
     case chapters
     case bibliography
-    case search
+    case chapterReader
 }
 
 extension Screen {
@@ -23,8 +23,8 @@ extension Screen {
             return "selectedChapters"
         case .bibliography:
             return "selectedBibliography"
-        case .search:
-            return "selectedSearch"
+        case .chapterReader:
+            return "tabBarIconViewSelected"
         }
     }
     
@@ -36,8 +36,8 @@ extension Screen {
             return "unSelectedChapters"
         case .bibliography:
             return "unSelectedBibliography"
-        case .search:
-            return "unSelectedSearch"
+        case .chapterReader:
+            return "tabBarIconViewUnSelected"
         }
     }
 }

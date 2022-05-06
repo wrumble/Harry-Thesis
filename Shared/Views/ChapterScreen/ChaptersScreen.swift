@@ -10,7 +10,7 @@ import Firebase
 
 struct ChaptersScreen: View {
     
-    @ObservedObject var viewModel = ChaptersScreenViewModel()
+    @ObservedObject var viewModel: ChaptersScreenViewModel
     
     @StateObject var router: Router
     
@@ -43,6 +43,6 @@ struct ChaptersScreen: View {
 
 struct ChapterScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ChaptersScreen(router: Router(), statusBarHeight: 20)
+        ChaptersScreen(viewModel: ChaptersScreenViewModel(), router: Router(), statusBarHeight: 20)
     }
 }

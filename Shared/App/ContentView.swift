@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @StateObject var router: Router
-    
+        
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {

@@ -11,28 +11,31 @@ struct TabScreen: View {
     
     @StateObject var router: Router
     
+    @ObservedObject var homeScreenViewModel = HomeScreenViewModel()
+    @ObservedObject var chaptersScreenViewModel = ChaptersScreenViewModel()
     @ObservedObject var bibliographyViewModel = BibliographyViewModel()
-    
+        
     var statusBarHeight: CGFloat
     
     var body: some View {
         switch router.currentScreen {
         case .home:
-            HomeScreen(statusBarHeight: statusBarHeight)
+            HomeScreen(viewModel: homeScreenViewModel, statusBarHeight: statusBarHeight)
         case .chapters:
-            ChaptersScreen(router: router,  statusBarHeight: statusBarHeight)
+            ChaptersScreen(viewModel: chaptersScreenViewModel, router: router,  statusBarHeight: statusBarHeight)
         case .bibliography:
             if let bibliography = bibliographyViewModel.bibliography {
                 BibliographyScreen(bibliography: bibliography)
             }
-        case .search:
-            Text("Search")
+        case .chapterReader:
+            ChapterReaderScreen(chapter: router.currentChapter)
         }
     }
 }
 
 struct TabScreen_Previews: PreviewProvider {
     static var previews: some View {
-        TabScreen(router: Router(), statusBarHeight: 50)
+        let router = Router()
+        TabScreen(router: router, statusBarHeight: 50)
     }
 }

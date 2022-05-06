@@ -12,9 +12,10 @@ import Firebase
 struct DN__0_DesignApp: App {
     
     @StateObject var router = Router()
-    
+        
     init() {
         FirebaseApp.configure()
+        
     }
     
     var body: some Scene {

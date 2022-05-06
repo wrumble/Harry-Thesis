@@ -35,6 +35,10 @@ struct ChapterView: View {
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .shadow(color: Color.chapterViewBottomDropShadow, radius: 19, x: 4, y: 3)
         .shadow(color: Color.chapterViewTopDropShadow, radius: 16, x: -7, y: -7)
+        .onTapGesture {
+            router.currentScreen = .chapterReader
+            router.currentChapter = chapter
+        }
     }
 }
 
