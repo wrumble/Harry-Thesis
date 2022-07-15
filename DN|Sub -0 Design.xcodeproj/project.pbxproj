@@ -170,6 +170,7 @@
 		68CE891A282074F5001B84FA /* PrologueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrologueItem.swift; sourceTree = "<group>"; };
 		68CE891D28207B2A001B84FA /* ProloguesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProloguesView.swift; sourceTree = "<group>"; };
 		68D14D6D2822EF42008A15B7 /* FontFile.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = FontFile.css; sourceTree = "<group>"; };
+		87A7D8AC2881D8F50033BA73 /* DN|Sub -0 Design (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DN|Sub -0 Design (iOS).entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +248,7 @@
 		687AB6E6281C39C70003D373 = {
 			isa = PBXGroup;
 			children = (
+				87A7D8AC2881D8F50033BA73 /* DN|Sub -0 Design (iOS).entitlements */,
 				687AB73A281C5EAA0003D373 /* DN-Sub--0-Design--iOS--Info.plist */,
 				687AB739281C5DBE0003D373 /* DN-Sub--0-Design--macOS--Info.plist */,
 				687AB6EB281C39C70003D373 /* Shared */,
@@ -530,7 +532,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					687AB6F2281C39C90003D373 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -837,9 +839,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DN|Sub -0 Design (iOS).entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7W622YQN45;
+				DEVELOPMENT_TEAM = WJMTPNAAQV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DN-Sub--0-Design--iOS--Info.plist";
@@ -853,10 +857,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumblewayne.DN--0-Design";
 				PRODUCT_NAME = "DN|Sub -0 Design";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -869,9 +874,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DN|Sub -0 Design (iOS).entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7W622YQN45;
+				DEVELOPMENT_TEAM = WJMTPNAAQV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DN-Sub--0-Design--iOS--Info.plist";
@@ -885,10 +892,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rumblewayne.DN--0-Design";
 				PRODUCT_NAME = "DN|Sub -0 Design";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -903,6 +911,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -933,6 +942,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

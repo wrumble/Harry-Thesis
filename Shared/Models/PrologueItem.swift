@@ -130,7 +130,7 @@ extension PrologueItem {
         return PrologueItem(
             text: text,
             imageName: "bookSmall",
-            position: 3,
+            position: 4,
             placeHolderName: "bookSmall",
             title: "part 2",
             subTitle: "forming a design and client brief",
