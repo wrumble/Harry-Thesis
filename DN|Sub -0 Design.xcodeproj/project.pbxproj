@@ -101,6 +101,8 @@
 		68CE891F28207B2A001B84FA /* ProloguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE891D28207B2A001B84FA /* ProloguesView.swift */; };
 		68D14D6E2822EF42008A15B7 /* FontFile.css in Resources */ = {isa = PBXBuildFile; fileRef = 68D14D6D2822EF42008A15B7 /* FontFile.css */; };
 		68D14D6F2822EF42008A15B7 /* FontFile.css in Resources */ = {isa = PBXBuildFile; fileRef = 68D14D6D2822EF42008A15B7 /* FontFile.css */; };
+		87A7D8F028908C400033BA73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A7D8EF28908C400033BA73 /* LaunchScreen.storyboard */; };
+		87A7D8F128908C400033BA73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A7D8EF28908C400033BA73 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +173,7 @@
 		68CE891D28207B2A001B84FA /* ProloguesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProloguesView.swift; sourceTree = "<group>"; };
 		68D14D6D2822EF42008A15B7 /* FontFile.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = FontFile.css; sourceTree = "<group>"; };
 		87A7D8AC2881D8F50033BA73 /* DN|Sub -0 Design (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DN|Sub -0 Design (iOS).entitlements"; sourceTree = "<group>"; };
+		87A7D8EF28908C400033BA73 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +329,7 @@
 				687AB732281C5A7B0003D373 /* Fonts */,
 				687AB6EE281C39C90003D373 /* Images.xcassets */,
 				687AB730281C43600003D373 /* Colors.xcassets */,
+				87A7D8EF28908C400033BA73 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -583,6 +587,7 @@
 				687AB718281C39C90003D373 /* Images.xcassets in Resources */,
 				68D14D6E2822EF42008A15B7 /* FontFile.css in Resources */,
 				68AAD347281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */,
+				87A7D8F028908C400033BA73 /* LaunchScreen.storyboard in Resources */,
 				687AB735281C5AB20003D373 /* JosefinSans-Regular.ttf in Resources */,
 				687AB731281C43600003D373 /* Colors.xcassets in Resources */,
 			);
@@ -595,6 +600,7 @@
 				68AAD300281CAC280012F6D5 /* Colors.xcassets in Resources */,
 				68D14D6F2822EF42008A15B7 /* FontFile.css in Resources */,
 				68AAD348281CDFAB0012F6D5 /* GoogleService-Info.plist in Resources */,
+				87A7D8F128908C400033BA73 /* LaunchScreen.storyboard in Resources */,
 				687AB719281C39C90003D373 /* Images.xcassets in Resources */,
 				687AB738281C5B320003D373 /* JosefinSans-Regular.ttf in Resources */,
 			);
@@ -849,6 +855,7 @@
 				INFOPLIST_FILE = "DN-Sub--0-Design--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -884,6 +891,7 @@
 				INFOPLIST_FILE = "DN-Sub--0-Design--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
