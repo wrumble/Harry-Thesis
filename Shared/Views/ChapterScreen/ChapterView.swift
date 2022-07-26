@@ -15,6 +15,9 @@ struct ChapterView: View {
     
     var body: some View {
         HStack {
+            if UIDevice.current.model == "iPad" {
+                Spacer()
+            }
             ZStack {
                 Image("chapterIconView")
                 FirebaseImage(imageName: chapter.imageName, placeHolderName: chapter.placeHolderName)
@@ -27,7 +30,7 @@ struct ChapterView: View {
         }
         .frame(
             maxWidth: UIScreen.main.bounds.width * 0.84,
-            maxHeight: 160
+            minHeight: 160
         )
         .background(
             LinearGradient(colors: [Color.chapterViewLeftFadeBackground, Color.chapterViewRightFadeBackground], startPoint: .leading, endPoint: .trailing)

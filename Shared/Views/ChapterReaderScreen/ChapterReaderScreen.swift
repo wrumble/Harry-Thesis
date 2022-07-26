@@ -26,6 +26,7 @@ struct ChapterReaderScreen: View {
                 
                 text(text: chapter.text)
             }
+            .padding(.bottom, 20)
         }
         .frame(
             maxWidth: .infinity,

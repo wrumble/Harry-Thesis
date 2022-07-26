@@ -24,6 +24,7 @@ struct ChaptersScreen: View {
                 }
             }
             .padding(.top, statusBarHeight + 20)
+            .padding(.bottom, 20)
             .frame(maxWidth: .infinity)
         }
         .frame(
